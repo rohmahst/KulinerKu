@@ -27,7 +27,7 @@
             margin: 0;
             width: 100% !important;
         }
-        
+
         .files input:focus {
             outline: 2px dashed #92b0b3;
             outline-offset: -10px;
@@ -35,11 +35,11 @@
             transition: outline-offset .15s ease-in-out, background-color .15s linear;
             border: 1px solid #92b0b3;
         }
-        
+
         .files {
             position: relative
         }
-        
+
         .files:after {
             pointer-events: none;
             position: absolute;
@@ -54,11 +54,11 @@
             background-size: 100%;
             background-repeat: no-repeat;
         }
-        
+
         .color input {
             background-color: #f1f1f1;
         }
-        
+
         .files:before {
             position: absolute;
             bottom: 10px;
@@ -82,7 +82,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top m-0 px-3" style="background-color: #98ff98;">
         <a href="#" class="navbar-brand pr-1"><img src="img/logo.png" width="80%" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -92,7 +93,8 @@
                     <a class="nav-link text-body" href="#">Home</a>
                 </li>
                 <li class="nav-item px-1 dropdown">
-                    <a class="nav-link text-body dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link text-body dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Kategori
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #b0f1b0;">
@@ -124,15 +126,43 @@
                     <input class='form-control border rounded' type="text" placeholder="Harga makanan...">
                 </div>
                 <div class="row m-3">
-                    <textarea class='form-control border rounded' type="text" placeholder="Deskripsi..." rows="4" cols="5"></textarea>
+                    <textarea class='form-control border rounded' type="text" placeholder="Deskripsi..." rows="4"
+                        cols="5"></textarea>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="row">
+                <div class="row m-3">
                     <input type="file">
+                </div>
+                <div class="row m-3">
+                    <textarea class='form-control border rounded' type="text" placeholder="Alamat..." rows="4"
+                        cols="5"></textarea>
                 </div>
             </div>
         </div>
+
+        <div class="row p-3">
+            <iframe width="400" height="250" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJYcnuoZog5C0R0gSSwPwLAyY&key=AIzaSyADJI162Hvab-efPEpUxztXQsFYYMCdh18"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-md-8">
+
+            </div>
+            <div class="col-md-2">
+                <button class='btn bg-success btn-block text-white'><i class="fas fa-save"></i> Simpan</button>
+            </div>
+            <div class="col-md-2">
+                <button class='btn bg-danger btn-block text-white'>Batal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer sticky-bottom px-0 text-center align-middle">
+        <p><b>@2021 KulinerKu Banjarmasin.</b></p>
     </div>
 </body>
 

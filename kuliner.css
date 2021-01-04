@@ -28,3 +28,19 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(204, 204, 204, 0.5)), url("img/italian-food-background-68.jpg");
     background-position: right bottom;
 }
+
+.vl-left{
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.vl-right{
+    border-right: 6px solid green;
+    height: 500px;
+    position: absolute;
+    right: 50%;
+    margin-right: -3px;
+}
