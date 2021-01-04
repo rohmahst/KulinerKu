@@ -21,15 +21,14 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #98ff98;">
-        <img src="img/logo.png" alt="">
+        <a href="#" class="navbar-brand pr-1"><img src="img/logo.png" width="80%" alt=""></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto font-weight-bolder">
                 <li class="nav-item active">
                     <a class="nav-link text-body" href="#">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-body dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link text-body dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Kategori
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #b0f1b0;">
@@ -46,13 +45,14 @@
                     <a class="nav-link text-body" href="#">Sign In</a>
                 </li>
             </ul>
-        </div>
+            </div>
     </nav>
 
-    <!-- Content -->
-    <div class="container mt-6">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="row">
+    <!-- Content list item -->
+    <div class="container mt-5 bg-warning">
+
+        <!-- add button -->
+        <div class="row pt-3">
             <div class="col-md-9"></div>
             <div class="col-md-3">
                 <button class="btn btn-primary rounded-pill">Tambah Makanan
@@ -61,7 +61,8 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row pt-3">
+            <!-- search button -->
             <div class="col-md-4">
                 <div class="input-group mb-2">
                     <div class="input-group-prepend">
@@ -75,29 +76,98 @@
                 </div>
             </div>
             <div class="col-md-4"></div>
+
+            <!-- change view -->
             <div class="col-md-4 text-left">
-                View: <i class="fas fa-border-all"></i>
+                <span class="align-bottom">
+                    View: <i class="fas fa-lg fa-border-all"></i>
+                </span>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-3">Gambar</div>
-            <div class="col-md-2">Deskripsi</div>
-            <div class="col-md-2">Harga</div>
-            <div class="col-md-2">Nama</div>
-            <div class="col-md-3"></div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <img src="img/soto.jpg" alt="" width="80%">
+        <!-- item list  -->
+        <div class="py-1 px-5">
+            <!-- Title item -->
+            <div class="row pt-4">
+                <div class="col-md-3">Gambar</div>
+                <div class="col-md-2">Deskripsi</div>
+                <div class="col-md-2">Harga</div>
+                <div class="col-md-2">Nama</div>
+                <div class="col-md-3"></div>
             </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-3"></div>
+
+            <!-- item -->
+            <div class="row shadow p-3 my-3 bg-white rounded ">
+                <div class="col-md-3 align-middle">
+                    <img src="img/soto.jpg" alt="" width="80%">
+                </div>
+                <div class="col-md-2 align-middle align-self-center">Ini Makanan</div>
+                <div class="col-md-2 align-middle align-self-center">10k</div>
+                <div class="col-md-2 align-middle align-self-center">soto</div>
+                <div class="col-md-3 text-right align-middle">
+                    <button class='btn btn-primary btn-block'><i class="fas fa-edit"></i> Edit</button>
+                    <button class='btn btn-danger btn-block'><i class="fas fa-trash"></i> Delete</button>
+                </div>
+            </div>
+            <div class="row shadow p-3 my-3 bg-white rounded ">
+                <div class="col-md-3 align-middle">
+                    <img src="img/lontong.jpg" alt="" width="80%">
+                </div>
+                <div class="col-md-2 align-middle align-self-center">Ini Makanan</div>
+                <div class="col-md-2 align-middle align-self-center">10k</div>
+                <div class="col-md-2 align-middle align-self-center">soto</div>
+                <div class="col-md-3 text-right align-middle">
+                    <button class='btn btn-primary btn-block'><i class="fas fa-edit"></i> Edit</button>
+                    <button class='btn btn-danger btn-block'><i class="fas fa-trash"></i> Delete</button>
+                </div>
+            </div>
+            <div class="row shadow p-3 my-3 bg-white rounded ">
+                <div class="col-md-3 align-middle">
+                    <img src="img/nasi kuning.png" alt="" width="80%">
+                </div>
+                <div class="col-md-2 align-middle align-self-center">Ini Makanan</div>
+                <div class="col-md-2 align-middle align-self-center">10k</div>
+                <div class="col-md-2 align-middle align-self-center">soto</div>
+                <div class="col-md-3 text-right align-middle">
+                    <button class='btn btn-primary btn-block'><i class="fas fa-edit"></i> Edit</button>
+                    <button class='btn btn-danger btn-block'><i class="fas fa-trash"></i> Delete</button>
+                </div>
+            </div>
+            <div class="row shadow p-3 my-3 bg-white rounded ">
+                <div class="col-md-3 align-middle">
+                    <img src="img/soto.jpg" alt="" width="80%">
+                </div>
+                <div class="col-md-2 align-middle align-self-center">Ini Makanan</div>
+                <div class="col-md-2 align-middle align-self-center">10k</div>
+                <div class="col-md-2 align-middle align-self-center">soto</div>
+                <div class="col-md-3 text-right align-middle">
+                    <button class='btn btn-primary btn-block'><i class="fas fa-edit"></i> Edit</button>
+                    <button class='btn btn-danger btn-block'><i class="fas fa-trash"></i> Delete</button>
+                </div>
+            </div>
+
+            <!-- pagination -->
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+        <!-- item list./ -->
+
+
     </div>
+
+
 </body>
 
 </html>
