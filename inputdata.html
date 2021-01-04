@@ -15,14 +15,74 @@
     <script src="asset/jquery-3.5.1.slim.min.js"></script>
     <!-- Javascript -->
     <script src="asset/js/bootstrap.min.js"></script>
+
+    <style>
+        .files input {
+            outline: 2px dashed #92b0b3;
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            padding: 120px 0px 85px 35%;
+            text-align: center !important;
+            margin: 0;
+            width: 100% !important;
+        }
+        
+        .files input:focus {
+            outline: 2px dashed #92b0b3;
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            border: 1px solid #92b0b3;
+        }
+        
+        .files {
+            position: relative
+        }
+        
+        .files:after {
+            pointer-events: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 50px;
+            right: 0;
+            height: 56px;
+            content: "";
+            display: block;
+            margin: 0 auto;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        .color input {
+            background-color: #f1f1f1;
+        }
+        
+        .files:before {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            pointer-events: none;
+            width: 100%;
+            right: 0;
+            height: 57px;
+            content: " or drag it here. ";
+            display: block;
+            margin: 0 auto;
+            color: #2ea591;
+            font-weight: 1000;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top m-0 px-3" style="background-color: #98ff98;">
         <a href="#" class="navbar-brand pr-1"><img src="img/logo.png" width="80%" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -32,8 +92,7 @@
                     <a class="nav-link text-body" href="#">Home</a>
                 </li>
                 <li class="nav-item px-1 dropdown">
-                    <a class="nav-link text-body dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link text-body dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Kategori
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #b0f1b0;">
@@ -65,8 +124,7 @@
                     <input class='form-control border rounded' type="text" placeholder="Harga makanan...">
                 </div>
                 <div class="row m-3">
-                    <textarea class='form-control border rounded' type="text" placeholder="Deskripsi..." rows="4"
-                        cols="5"></textarea>
+                    <textarea class='form-control border rounded' type="text" placeholder="Deskripsi..." rows="4" cols="5"></textarea>
                 </div>
             </div>
             <div class="col-md-6">
