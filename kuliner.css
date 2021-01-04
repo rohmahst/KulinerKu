@@ -5,17 +5,25 @@ body {
 
 .nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-.nav-item:hover {
-    cursor: pointer;
-    color: orange;
+.nav-item>a {
+    transition: 0.4s;
+}
+
+.nav-item>a:hover {
+    transition: 0.4s;
+    background-color: #f8f9fa;
+    border-radius: 6%;
+    text-decoration: underline;
 }
 
 .footer {
     background-color: #98ff98;
     text-align: center;
     padding: 1%;
+}
+
+.info {
+    background-image: url("img/italian-food-background-68.jpg");
 }

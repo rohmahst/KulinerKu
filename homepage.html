@@ -9,54 +9,46 @@
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <!-- Custom css -->
     <link rel="stylesheet" href="kuliner.css">
+    <!-- FontAwesome css -->
+    <link rel="stylesheet" href="fontawesome\css\all.min.css">
     <!-- JQuery -->
     <script src="asset/jquery-3.5.1.slim.min.js"></script>
     <!-- Javascript -->
     <script src="asset/js/bootstrap.min.js"></script>
-    <style>
-        a {
-            transition: .4s;
-        }
-        
-        a:hover {
-            transition: .4s;
-            background-color: rgba(3, 169, 244, 0.7);
-            border-radius: 50%;
-        }
-    </style>
+
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #98ff98;">
-        <a href="#" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top m-0 px-3" style="background-color: #98ff98;">
+        <a href="#" class="navbar-brand pr-1"><img src="img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto font-weight-bolder">
-                <li class="nav-item active">
+                <li class="nav-item px-1 active">
                     <a class="nav-link text-body" href="#">Home</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item px-1 dropdown">
                     <a class="nav-link text-body dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Kategori
-          </a>
+                        Kategori
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #b0f1b0;">
                         <a class="dropdown-item text-body" href="#">Makanan</a>
                         <a class="dropdown-item text-body" href="#">Minuman</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item px-1">
                     <a class="nav-link text-body" href="#">Map</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item px-1">
                     <a class="nav-link text-body" href="#">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item px-1">
                     <a class="nav-link text-body" href="#">Sign In</a>
                 </li>
             </ul>
@@ -91,15 +83,46 @@
         </a>
     </div>
 
-    <!-- Info -->
-    <div class="info">
-        <img src="img/italian-food-background-68.jpg" alt="" width="100%">
+    <div class="container-fluid info">
+        <!-- Info -->
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-10x fa-map-marked-alt"></i><br>
+                    <p class="h1">
+                        Peta
+                    </p>
+                    <p class="h5">
+                        Dengan fitur peta memudahkan pengguna menemukan tempat makan
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-10x fa-coins"></i><br>
+                    <p class="h1">
+                        Harga
+                    </p>
+                    <p class="h5">
+                        Pengguna dapat melihat harga makanan pada website
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-10x fa-star"></i> <br>
+                    <p class="h1">
+                        Review
+                    </p>
+                    <p class="h5">
+                        Berikan review restoran untuk makanan yang anda nikmati
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer sticky-bottom px-0 text-center align-middle">
         <p><b>@2021 KulinerKu Banjarmasin.</b></p>
     </div>
+
 
 </body>
 
