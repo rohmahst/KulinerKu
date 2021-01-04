@@ -1,0 +1,21 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.footer {
+    background-color: #98ff98;
+    text-align: center;
+    padding: 1%;
+}
